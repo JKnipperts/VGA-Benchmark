@@ -1,6 +1,6 @@
 {$S-,R-,I-,V-,B-}
 
-Unit Timer;
+Unit TPTimer;
   
 Interface
 Const
