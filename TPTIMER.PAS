@@ -1,15 +1,7 @@
 {$S-,R-,I-,V-,B-}
 
-{*********************************************************}
-{*                   TPTIMER.PAS 2.00                    *}
-{*                by TurboPower Software                 *}
-{*********************************************************}
-
-Unit TpTimer;
-  {-Allows events to be timed With 1 microsecond resolution}
-
-
-
+Unit Timer;
+  
 Interface
 Const
   TimerResolution = 1193181.667;
