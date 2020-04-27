@@ -1,9 +1,7 @@
 Unit Misc;
 
-{Diese Unit enth„lt ntzliche Proceduren zum Zerlegen von Standartvariablen,
+{Diese Unit enthâ€lt nÂtzliche Proceduren zum Zerlegen von Standartvariablen,
  dem Ansteuern von einzelnen Bits und dem Ausgeben von Zahlenwerten.
-
-{Version 1.2 - 03.10.01 (Version 1.0 wurde am 19.09.00 erstellt)   }
 
 
 
@@ -13,12 +11,8 @@ interface
 uses crt;
 
 
-const
- copyright : string = #10+#13+' Misc routines v1.2 (c) 2000/2001 by Jan Knipperts '+#10+#13;
-
-
 type
- {Fr Bitoperationen :}
+ {FÂr Bitoperationen :}
   bit = 0..1;
   bitnum = 0..7;
   bitnumw = 0..15;
@@ -75,7 +69,7 @@ Function  IsKeypressed : boolean;
 Procedure SpkSound(Hz : word);
 Procedure SpkNosound;
 
-{Zeitverz”gerung}
+{Zeitverzâ€gerung}
 
 Procedure Xdelay(ms : word);
 
@@ -102,12 +96,12 @@ begin
 end;
 
 Function clrBit(b : Byte; n : bitNum) : Byte;
-{l”scht ein Bit}
+{lâ€scht ein Bit}
 begin
   clrBit := b and hi($FEFF shl n);
 end;
 
-{Und fr Word...}
+{Und fÂr Word...}
 
 Function getBitw(b : word; n : bitNumw) : bit;
 {liefert den Zustand eines Bit}
@@ -122,13 +116,13 @@ begin
 end;
 
 Function clrBitw(b : word; n : bitNumw) : word;
-{l”scht ein Bit}
+{lâ€scht ein Bit}
 begin
   clrBitw := b and hi($FEFF shl n);
 end;
 
 
-{Und fr Longint...}
+{Und fÂr Longint...}
 
 Function getBitL(b : longint; n : bitNumL) : bit;
 {liefert den Zustand eines Bit}
@@ -143,7 +137,7 @@ begin
 end;
 
 Function clrBitL(b : Longint; n : bitNumL) : longint;
-{l”scht ein Bit}
+{lâ€scht ein Bit}
 begin
   clrBitL := b and hi($FEFF shl n);
 end;
