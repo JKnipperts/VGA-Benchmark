@@ -3,7 +3,7 @@ uses crt,misc,tptimer;
 
 const
  vseg   : word   = $0A000;
- title  : string = 'VGA Speed Test v. 1.0 (c) 2002 by Jan Knipperts';
+ title  : string = 'VGA Speed Test v. 1.0 (c) 1999 by Jan Knipperts';
 
 var
  start,stop,
