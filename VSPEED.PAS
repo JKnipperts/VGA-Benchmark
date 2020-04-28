@@ -1,3 +1,7 @@
+{Program:  VGA Benchmark
+ Version:  1.0 - 15/06/1999
+ Author: Jan Knipperts }
+ 
 Program VSPEED;
 uses crt,misc,tptimer;
 
@@ -49,6 +53,7 @@ end;
 
 
 Procedure BiosPixel(x,y : word; c : byte);
+{Puts a pixel using the video bios function}
 assembler;
 asm
  mov ah,0Ch
@@ -60,7 +65,7 @@ asm
 end;
 
 Procedure PutPixel(x,y:word; c:byte);
-{Puts a pixel}
+{Puts a pixel by direct accessing the display memory}
 assembler;
 asm
   mov es,vseg
@@ -111,7 +116,7 @@ end;
 
 
 
-
+{========= Main Program =============}
 
 begin
  asm
