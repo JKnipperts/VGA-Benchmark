@@ -1,3 +1,7 @@
+{Unit for high resolution timing (1 microsecond resolution)
+Original TPTimer unit was programed by TurboPower Software and released to the public domain via the SWAG Pascal archive.
+Modified by Jan Knipperts for the VGA Benchmark program}
+
 {$S-,R-,I-,V-,B-}
 
 Unit TPTimer;
@@ -153,4 +157,3 @@ begin
   {adjust For speed of machine}
   Calibrate;
 end.
-
